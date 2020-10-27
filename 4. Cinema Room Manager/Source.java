@@ -2,7 +2,9 @@ import java.util.Scanner;
 
 public class Source {
     
-    static void printRoom(int r, int s, int rno, int sno) {
+    static Scanner sc = new Scanner(System.in);
+
+    static void printRoom(char[][] room, int r, int s) {
         int k;
         System.out.println("\n" + "Cinema:");
         for(int i = 0; i < r+1; i++) {
@@ -17,10 +19,7 @@ public class Source {
                     System.out.print(j + " ");
                 }
                 else {
-                    if(rno == i && sno == j) 
-                        System.out.print("B ");
-                    else
-                        System.out.print("S ");
+                    System.out.print(room[i-1][j-1] + " ");
                 }
             }
             System.out.println("");
@@ -28,15 +27,8 @@ public class Source {
         System.out.println();
     } 
 
-    public static void main(String[] args) {
-        // Write your code here
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number of rows: ");
-        int r = sc.nextInt();
-        System.out.println("Enter the number of seats in each row: ");
-        int s = sc.nextInt();
-        printRoom(r,s,-1,-1);
-        System.out.println("Enter a row number: ");
+    static void buyTicket(char[][] room, int r, int s) {
+        System.out.println("\nEnter a row number: ");
         int rno = sc.nextInt();
         System.out.println("Enter a seat number in that row: ");
         int sno = sc.nextInt();
@@ -51,7 +43,28 @@ public class Source {
             if(rno <= fh) price = 10;
             else price = 8;
         }
-        System.out.println("\nTicket Price: $"+price);
-        printRoom(r,s,rno,sno);
+        System.out.println("Ticket Price: $"+price);
+        room[rno-1][sno-1] = 'B';
+        //printRoom(r,s,rno,sno);
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Enter the number of rows: ");
+        int r = sc.nextInt();
+        System.out.println("Enter the number of seats in each row: ");
+        int s = sc.nextInt();
+        char[][] room = new char[r][s];
+        for(int i=0; i < r; i++) {
+            for(int j=0; j < s; j++) {
+                room[i][j] = 'S';
+            }
+        }
+        int choice = -1;
+        do {
+            System.out.println("\n1. Show the seats\n2. Buy a ticket\n0. Exit");
+            choice = sc.nextInt();
+            if(choice == 1) printRoom(room, r, s);
+            if(choice == 2) buyTicket(room, r, s);
+        } while(choice != 0);
     }
 }
