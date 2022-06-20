@@ -31,7 +31,8 @@ int b = ++a;
 System.out.println(a); // 5
 System.out.println(b); // 5
 ```
-	* **Postfix increment**
+
+* **Postfix increment**
 ```java
 int a = 4;
 int b = a++;
@@ -39,4 +40,5 @@ int b = a++;
 System.out.println(a); // 5
 System.out.println(b); // 4
 ```
-	* In Java, postfix operator has higher precedence than the assignment operator. However, it returns the original value of a, not the incremented one
+
+* In Java, postfix operator has higher precedence than the assignment operator. However, it returns the original value of a, not the incremented one
