@@ -24,21 +24,22 @@ n -= 1; // 10
 	* postfix (`n++` or `n—`) increases/decreases the value of a variable after it is used.
 * The following examples demonstrate both forms of increment
 	* **Prefix increment**
-```java
-int a = 4;
-int b = ++a;
- 
-System.out.println(a); // 5
-System.out.println(b); // 5
-```
+	```java
+	int a = 4;
+	int b = ++a;
+	 
+	System.out.println(a); // 5
+	System.out.println(b); // 5
+	```
 
-* **Postfix increment**
-```java
-int a = 4;
-int b = a++;
- 
-System.out.println(a); // 5
-System.out.println(b); // 4
-```
+	* **Postfix increment**
+
+	```java
+	int a = 4;
+	int b = a++;
+	 
+	System.out.println(a); // 5
+	System.out.println(b); // 4
+	```
 
 * In Java, postfix operator has higher precedence than the assignment operator. However, it returns the original value of a, not the incremented one
