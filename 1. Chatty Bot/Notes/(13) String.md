@@ -70,60 +70,62 @@ String trimmedText = textWithWhitespaces.trim(); // "text with whitespaces   !"
 
 ## Exceptions when processing strings
 When working with strings, there can be several exceptions.
-	1. `NullPointerException` : If a string is `null` and we call a method of the string, it throws `NullPointerException`.
-```java
-String s = null;
-int length = s.length(); // it throws NullPointerException	
-```
-	2.  `StringIndexOutOfBoundsException` : If we try to access a non-existing character by an index then this exception occurs.
-```java
-String s = "ab";
-char c = s.charAt(2); // it throws StringIndexOutOfBoundsException because indexing starts with 0
-```
+
+1. `NullPointerException` : If a string is `null` and we call a method of the string, it throws `NullPointerException`.
+	```java
+	String s = null;
+	int length = s.length(); // it throws NullPointerException	
+	```
+2.  `StringIndexOutOfBoundsException` : If we try to access a non-existing character by an index then this exception occurs.
+	```java
+	String s = "ab";
+	char c = s.charAt(2); // it throws StringIndexOutOfBoundsException because indexing starts with 0
+	```
 
 ## Concatenating strings
 * Two strings can be concatenated using the “+” operator or the `concat` method.  Both approaches lead to the same results.
-```java
-String firstName = "John";
-String lastName = "Smith";
- 
-// concatenation using the "+" operator
-String fullName1 = firstName + " " + lastName; // "John Smith"
- 
-// concatenation using the concat method 
-String fullName2 = firstName.concat(" ").concat(lastName); // "John Smith" 
-```
+	```java
+	String firstName = "John";
+	String lastName = "Smith";
+	 
+	// concatenation using the "+" operator
+	String fullName1 = firstName + " " + lastName; // "John Smith"
+	 
+	// concatenation using the concat method 
+	String fullName2 = firstName.concat(" ").concat(lastName); // "John Smith" 
+	```
 
 * When we concatenate two strings a new string is created (because strings are **immutable**).
 
 ## Appending values to a string
 * It’s possible to add values of different types to a string. The value will automatically be converted to a string. For example:
-```java
-String str = "str" + 10 + false; // the result is "str10false" 
-```
+	```java
+	String str = "str" + 10 + false; // the result is "str10false" 
+	```
 * More examples:
-```java
-String shortString = "str";
-long number = 100;
- 
-String result1 = shortString + number + 50; // the result is "str10050"
-String result2 = number + 50 + shortString; // what is the result2? 
-```
+	```java
+	String shortString = "str";
+	long number = 100;
+	 
+	String result1 = shortString + number + 50; // the result is "str10050"
+	String result2 = number + 50 + shortString; // what is the result2? 
+	```
+	
 * The `result2` is `150str`, because, first, we calculate a sum of `number` and `50` and then `concat` it with `str`. The order of operations is important.
 
 ## How to compare strings correctly?
 * Since string is a reference type we shouldn’t compare strings using `==` or `!=` operators. In this case, only addresses will be compared, but not actual values.
-* `String` has two convenient methods for comparing the equivalence of the actual content of one string with the content of another string : `equals(other` and `equalsIgnoreCase(other)`. Example:
-```java
-String first = "first";
-String second = "second";
+* `String` has two convenient methods for comparing the equivalence of the actual content of one string with the content of another string : `equals(other)` and `equalsIgnoreCase(other)`. Example:
+	```java
+	String first = "first";
+	String second = "second";
  
-String anotherFirst = "first";
-String secondInUpperCase = "SECOND";
+	String anotherFirst = "first";
+	String secondInUpperCase = "SECOND";
  
-System.out.println(first.equals(second)); // false, the strings have different values
-System.out.println(first.equals(anotherFirst)); // true, the strings have the same value
+	System.out.println(first.equals(second)); // false, the strings have different values
+	System.out.println(first.equals(anotherFirst)); // true, the strings have the same value
  
-System.out.println(second.equals(secondInUpperCase)); // false, the strings have different cases
-System.out.println(second.equalsIgnoreCase(secondInUpperCase)); // true, it ignores cases
+	System.out.println(second.equals(secondInUpperCase)); // false, the strings have different cases
+	System.out.println(second.equalsIgnoreCase(secondInUpperCase)); // true, it ignores cases
 ```
