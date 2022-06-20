@@ -1,6 +1,3 @@
----
-tags: JAVA
----
 # Overview of the Basic Program
 ## The Hello World Program
 ```java
