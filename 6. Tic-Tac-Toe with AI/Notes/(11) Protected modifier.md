@@ -101,8 +101,7 @@ public class SmartWatch extends MobileGadget {
 
 Now, it's time to put all the access modifiers together:
 
-![img access modifiers]("../
-\[pic\]access_modifiers.svg")
+![img access modifiers](https://github.com/srujanprophet/Java-Projects/blob/main/6.%20Tic-Tac-Toe%20with%20AI/Notes/%5Bpic%5Daccess_modifiers.svg)
 
 The scheme is the same as it was earlier, but the questions now are specified with regard to inheritance. 
 
