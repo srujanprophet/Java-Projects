@@ -48,7 +48,7 @@ Different complexity estimates are used in choosing optimal algorithms for diffe
 
 Well, we already know who, what, when, where, why, but we are yet to fully understand the "how". In other words, we need a better understanding of how to choose between algorithms knowing their best, average, and worst cases. Let's take a closer look at an example, where you need to choose a sorting algorithm. Let's say we want to sort a few first digits of $\pi = 3,1415926535897932384626433832795...$
 
-If we consider $pi$ as an array [3,1,4,1,5,9,2,6,5,3,5,8,9], then almost every sorting algorithm will be suitable, because the array of $\pi$ digits is not too big. However, what if we consider more digits? Below are listed the algorithms and their calculated complexity cases:
+If we consider ${\pi}$ as an array [3,1,4,1,5,9,2,6,5,3,5,8,9], then almost every sorting algorithm will be suitable, because the array of $\pi$ digits is not too big. However, what if we consider more digits? Below are listed the algorithms and their calculated complexity cases:
 
 ![sorting_complexities](https://github.com/srujanprophet/Java-Projects/blob/main/6.%20Tic-Tac-Toe%20with%20AI/Notes/%5Bpic%5DSorting_time.png)
 
