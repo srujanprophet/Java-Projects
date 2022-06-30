@@ -48,14 +48,14 @@ Different complexity estimates are used in choosing optimal algorithms for diffe
 
 Well, we already know who, what, when, where, why, but we are yet to fully understand the "how". In other words, we need a better understanding of how to choose between algorithms knowing their best, average, and worst cases. Let's take a closer look at an example, where you need to choose a sorting algorithm. Let's say we want to sort a few first digits of $\pi = 3,1415926535897932384626433832795...$
 
-If we consider $\pi$ as an array $[3,1,4,1,5,9,2,6,5,3,5,8,9]$, then almost every sorting algorithm will be suitable, because the array of $\pi$ digits is not too big. However, what if we consider more digits? Below are listed the algorithms and their calculated complexity cases:
+If we consider $\pi$ as an array [3,1,4,1,5,9,2,6,5,3,5,8,9], then almost every sorting algorithm will be suitable, because the array of $\pi$ digits is not too big. However, what if we consider more digits? Below are listed the algorithms and their calculated complexity cases:
 
 ![sorting_complexities](https://github.com/srujanprophet/Java-Projects/blob/main/6.%20Tic-Tac-Toe%20with%20AI/Notes/%5Bpic%5DSorting_time.png)
 
 
 Considering even a small but unsorted array, we can't define it as the best case of a dataset. Hence, we can't consider the "Best case" column at all. Let's now look at the usual sequence of the first digits of $\pi$. It would make sense to focus on the average cases of the presented sorting algorithms. Their time complexity is $O(n \cdot log\:n)$, $O(n^2)$, and $O(n \cdot n!)$. Since the last two are worse than $O(n \cdot log \:n)$, we can choose quick sort or merge sort with confidence.
 
-But how to make the final decision? For this, we also need to examine the worst case. What if we need to sort the first 10,000 digits of $\pi$? This is still not the worst case, because there are more than 10,000 digits in $\pi$, but such an array will be very large, and we need to take it into account. Thus, we can conclude that the merge sort algorithm will be the best option for our problem.
+But how to make the final decision? For this, we also need to examine the worst case. What if we need to sort the first 10,000 digits of $\pi$ ? This is still not the worst case, because there are more than 10,000 digits in $\pi$, but such an array will be very large, and we need to take it into account. Thus, we can conclude that the merge sort algorithm will be the best option for our problem.
 
 ## 6. Conclusion
 Defining the best, the average and the worst cases for an algorithm you consider is obligatory because the result will directly influence the efficiency of your program. Usually, there is no need to think about the best case, since the algorithm you decide to implement won't always have as input the same set of data. However, understanding the upper bound of the algorithm is essential, because then you won't have doubts about fitting the algorithm's execution in a known limited time.
