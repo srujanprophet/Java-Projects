@@ -226,7 +226,7 @@ class playerFactory {
     }
 }
 
-public class Source {
+public class Main {
 
     static void showGrid(String grid) {
         System.out.println("---------");
