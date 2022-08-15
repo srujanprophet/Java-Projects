@@ -27,9 +27,9 @@
 | 23    | Test Lifecycle and Annotations                              |
 | 24    | Parameterized Test                              |
 | 25    | Anonymous Classes                            |
-| 25    | Lambda Expressions                            |
-| 25    | Method References                           |
-| 25    | Functional Interfaces                            |
-| 25    | Ordering and Total Order                            |
-| 25    | Comparator                            |
-| 25    | Modules                            |
+| 26    | Lambda Expressions                            |
+| 27    | Method References                           |
+| 28    | Functional Interfaces                            |
+| 29    | Ordering and Total Order                            |
+| 30    | Comparator                            |
+| 31    | Modules                            |
