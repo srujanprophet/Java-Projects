@@ -1,3 +1,5 @@
+// 5. Friend or Foe
+
 package battleship;
 
 import java.util.*;
