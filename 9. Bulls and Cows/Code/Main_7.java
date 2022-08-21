@@ -1,3 +1,5 @@
+// 7. Error
+
 package bullscows;
 
 import java.util.*;
