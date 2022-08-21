@@ -1,3 +1,5 @@
+// 6. Sunny and Square Numbers
+
 package numbers;
 
 import java.util.*;
