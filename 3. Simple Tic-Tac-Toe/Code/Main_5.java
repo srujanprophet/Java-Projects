@@ -1,3 +1,5 @@
+// 5. Fight!
+
 import java.util.Scanner;
 
 public class Source {
