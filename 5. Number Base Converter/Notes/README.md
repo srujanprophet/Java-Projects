@@ -18,3 +18,6 @@
 | 14  | Hierarchy of Exceptions                             |
 | 15  | Exception Handling                   |
 | 16  | Numeric Literal             |
+| 17 | BigInteger |
+| 18 | BigDecimal |
+| 19 | Decimal to Binary: Fractions |
