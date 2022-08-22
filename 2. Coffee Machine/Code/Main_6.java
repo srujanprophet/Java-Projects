@@ -1,3 +1,5 @@
+// 6. Brush Up Your Code
+
 import java.util.Scanner;
 
 public class Source {
