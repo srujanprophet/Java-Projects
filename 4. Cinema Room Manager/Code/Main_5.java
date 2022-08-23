@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Source {
+public class Cinema {
     
     static Scanner sc = new Scanner(System.in);
     static int purchased = 0;
