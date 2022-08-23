@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Source {
+public class CoffeeMachine {
 	static Scanner sc = new Scanner(System.in);
 	public static void main(String[] args) {
 		CoffeeMachine c_m = new CoffeeMachine(400, 540, 120, 9, 550);
