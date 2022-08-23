@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class CoffeeMachine {
 	static Scanner sc = new Scanner(System.in);
 	public static void main(String[] args) {
-		CoffeeMachine c_m = new CoffeeMachine(400, 540, 120, 9, 550);
+		CoffeeMach c_m = new CoffeeMach(400, 540, 120, 9, 550);
         System.out.println("Write action (buy, fill, take, remaining, exit):");
         String action = sc.next();
         while (!action.equals("exit")) {
@@ -16,10 +16,10 @@ public class CoffeeMachine {
     }
 }   
 
-class CoffeeMachine {
+class CoffeeMach {
 	static Scanner sc = new Scanner(System.in);
 	int water,milk,cbeans,cups,money;
-	public CoffeeMachine(int water, int milk, int cbeans, int cups, int money) {
+	public CoffeeMach(int water, int milk, int cbeans, int cups, int money) {
 		this.water = water;
 		this.milk = milk;
 		this.cbeans = cbeans;
