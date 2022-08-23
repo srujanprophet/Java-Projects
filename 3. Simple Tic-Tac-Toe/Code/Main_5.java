@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Source {
+public class Main {
     
     public static boolean winner(char[] a, char ch) {
         char c1 = a[0];
