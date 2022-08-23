@@ -10,7 +10,6 @@ public class SimpleBot {
     public static void main(String[] args) {
         greet("Reyna", "2020"); // change it as you need
         remindName();
-        guessAge();
     }
 
     static void greet(String assistantName, String birthYear) {
