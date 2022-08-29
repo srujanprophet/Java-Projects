@@ -19,16 +19,16 @@ public class Main {
     
     public static String binHexOct(int number, int decimal) {
         switch(decimal) {
-            case 2 -> {
+              case 2 : {
                 return Integer.toBinaryString(number);       
             }
-            case 8 -> {
+              case 8 : {
                 return Integer.toOctalString(number);
             }
-            case 16 -> {
+              case 16 : {
                 return Integer.toHexString(number);
             }
-            default -> {
+            default : {
                 return "invalid inputs.";
             }
         }
