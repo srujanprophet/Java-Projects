@@ -1,5 +1,7 @@
 // 7. Jumping Numbers
 
+// 7. Jumping Numbers
+
 package numbers;
 
 import java.util.*;
@@ -63,7 +65,7 @@ public class Main {
             return false;
         }
         int n = (10 * Character.getNumericValue(num.charAt(0))) +
-            Character.getNumericValue(num.charAt(num.length()-1));
+                Character.getNumericValue(num.charAt(num.length()-1));
         return (Long.parseLong(num) % n == 0);
     }
 
@@ -182,20 +184,14 @@ public class Main {
             String[] inputs = sc.nextLine().split(" ");
             long n = Long.parseLong(inputs[0]);
             if (n < 0) {
-                System.out.println("""
-
-                        The first parameter should be a natural number or zero.
-                        """);
+                System.out.println("The first parameter should be a natural number or zero.");
             } else if (n == 0) {
                 System.out.println("\nGoodbye!");
                 break;
             } else if (inputs.length == 2) {
                 int range = Integer.parseInt(inputs[1]);
                 if (range < 0) {
-                    System.out.println("""
-
-                             The second parameter should be a natural number.
-                            """);
+                    System.out.println("The second parameter should be a natural number.");
                     continue;
                 }
                 System.out.println();
@@ -218,10 +214,7 @@ public class Main {
             } else {
                 int range = Integer.parseInt(inputs[1]);
                 if (range < 0) {
-                    System.out.println("""
-
-                             The second parameter should be a natural number.
-                            """);
+                    System.out.println("The second parameter should be a natural number.");
                     continue;
                 }
                 ArrayList<String> queries = new ArrayList<>(Arrays.asList(inputs).subList(2, inputs.length));
