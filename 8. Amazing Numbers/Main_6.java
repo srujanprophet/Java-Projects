@@ -173,20 +173,14 @@ public class Main {
             String[] inputs = sc.nextLine().split(" ");
             long n = Long.parseLong(inputs[0]);
             if (n < 0) {
-                System.out.println("""
-
-                        The first parameter should be a natural number or zero.
-                        """);
+                System.out.println("The first parameter should be a natural number or zero.");
             } else if (n == 0) {
                 System.out.println("\nGoodbye!");
                 break;
             } else if (inputs.length >= 2) {
                 int range = Integer.parseInt(inputs[1]);
                 if (range < 0) {
-                    System.out.println("""
-
-                             The second parameter should be a natural number.
-                            """);
+                    System.out.println("The second parameter should be a natural number.");
                     continue;
                 }
                 boolean found = true;
