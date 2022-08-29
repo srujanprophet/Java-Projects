@@ -1,7 +1,5 @@
 // 7. Jumping Numbers
 
-// 7. Jumping Numbers
-
 package numbers;
 
 import java.util.*;
