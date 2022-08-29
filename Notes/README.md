@@ -2,6 +2,7 @@
 
 ## Structure of Notes
 
+```
 .
 ├── Computer science
 │   ├── Fundamentals
@@ -312,3 +313,4 @@
 │           └── 5. Decimal to Binary: Fractions.md
 └── README.md
 
+```
