@@ -187,7 +187,7 @@
 │           │   │   └── Creational patterns
 │           │   │       ├── 1. Builder.md
 │           │   │       ├── 2. Encapsulating Object Creation.md
-│           │   │       ├── 3.. Factory Method.md
+│           │   │       ├── 3. Factory Method.md
 │           │   │       └── 4. Abstract Factory.md
 │           │   ├── Functional programming
 │           │   │   └── Functions
@@ -235,7 +235,7 @@
 │           │   │   │   ├── Classes and members
 │           │   │   │   │   ├── 1. Defining Classes.md
 │           │   │   │   │   ├── 2. Constructor.md
-│           │   │   │   │   ├── 3,. Instance Methods.md
+│           │   │   │   │   ├── 3. Instance Methods.md
 │           │   │   │   │   ├── 4. Static Members.md
 │           │   │   │   │   ├── 5. Multiple Constructors.md
 │           │   │   │   │   └── 6. Initialization Blocks.md
