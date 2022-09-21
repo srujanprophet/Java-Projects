@@ -1,4 +1,4 @@
-// 1. 100-cell database
+// 2. Network Connection
 
 package client;
 
