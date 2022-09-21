@@ -1,3 +1,5 @@
+// 2. Expand the Search
+
 package search;
 
 import java.util.ArrayList;
